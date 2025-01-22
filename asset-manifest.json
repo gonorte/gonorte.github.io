@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Gonorte/static/css/main.bacae969.css",
-    "main.js": "/Gonorte/static/js/main.c68f04ce.js",
-    "static/media/bg-hero.jpg": "/Gonorte/static/media/bg-hero.48b58d6d4c95a70d3531.jpg",
-    "static/media/perfil.jpg": "/Gonorte/static/media/perfil.56bc09e88293aa95ff7e.jpg",
+    "main.css": "/Gonorte/static/css/main.5de857fb.css",
+    "main.js": "/Gonorte/static/js/main.6870c5d8.js",
+    "static/media/perfil.jpg": "/Gonorte/static/media/perfil.84a9f92379f064a1ce79.jpg",
+    "static/media/perdida.jpg": "/Gonorte/static/media/perdida.8bb9b708716637189eba.jpg",
+    "static/media/bg-hero.jpg": "/Gonorte/static/media/bg-hero.330c640fb395fa794d36.jpg",
+    "static/media/rendimiento.jpg": "/Gonorte/static/media/rendimiento.cf448d6b7b277b37e973.jpg",
+    "static/media/rehabilitacion.jpg": "/Gonorte/static/media/rehabilitacion.c3b2762b0e165c51fbbf.jpg",
+    "static/media/aumento.jpg": "/Gonorte/static/media/aumento.23a94cb99b4ded61d69c.jpg",
     "static/media/yoga.jpg": "/Gonorte/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
     "index.html": "/Gonorte/index.html",
-    "main.bacae969.css.map": "/Gonorte/static/css/main.bacae969.css.map",
-    "main.c68f04ce.js.map": "/Gonorte/static/js/main.c68f04ce.js.map"
+    "main.5de857fb.css.map": "/Gonorte/static/css/main.5de857fb.css.map",
+    "main.6870c5d8.js.map": "/Gonorte/static/js/main.6870c5d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.bacae969.css",
-    "static/js/main.c68f04ce.js"
+    "static/css/main.5de857fb.css",
+    "static/js/main.6870c5d8.js"
   ]
 }
