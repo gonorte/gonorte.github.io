@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20bcc062.css",
+    "main.js": "/static/js/main.be67dc01.js",
+    "static/media/bg-hero.jpg": "/static/media/bg-hero.48b58d6d4c95a70d3531.jpg",
+    "static/media/perfil.jpg": "/static/media/perfil.56bc09e88293aa95ff7e.jpg",
+    "static/media/yoga.jpg": "/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
+    "index.html": "/index.html",
+    "main.20bcc062.css.map": "/static/css/main.20bcc062.css.map",
+    "main.be67dc01.js.map": "/static/js/main.be67dc01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20bcc062.css",
+    "static/js/main.be67dc01.js"
+  ]
+}
