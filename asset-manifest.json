@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Gonorte/static/css/main.0d8812f1.css",
-    "main.js": "/Gonorte/static/js/main.c77d6aeb.js",
+    "main.css": "/Gonorte/static/css/main.4a78b5f0.css",
+    "main.js": "/Gonorte/static/js/main.e8be3071.js",
     "static/media/video.mp4": "/Gonorte/static/media/video.e3679cd13c29bb29c5d1.mp4",
     "static/media/perfil.jpg": "/Gonorte/static/media/perfil.95f782a63478d5d5283c.jpg",
     "static/media/rendimiento.jpg": "/Gonorte/static/media/rendimiento.4d70cfa98d1cf3c708b2.jpg",
@@ -11,11 +11,11 @@
     "static/media/yoga.jpg": "/Gonorte/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
     "static/media/perdida.jpg": "/Gonorte/static/media/perdida.688d370aecd23185fedf.jpg",
     "index.html": "/Gonorte/index.html",
-    "main.0d8812f1.css.map": "/Gonorte/static/css/main.0d8812f1.css.map",
-    "main.c77d6aeb.js.map": "/Gonorte/static/js/main.c77d6aeb.js.map"
+    "main.4a78b5f0.css.map": "/Gonorte/static/css/main.4a78b5f0.css.map",
+    "main.e8be3071.js.map": "/Gonorte/static/js/main.e8be3071.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d8812f1.css",
-    "static/js/main.c77d6aeb.js"
+    "static/css/main.4a78b5f0.css",
+    "static/js/main.e8be3071.js"
   ]
 }
