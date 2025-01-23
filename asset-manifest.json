@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Gonorte/static/css/main.ca6b859c.css",
-    "main.js": "/Gonorte/static/js/main.d79002f9.js",
-    "static/media/perfil.jpg": "/Gonorte/static/media/perfil.84a9f92379f064a1ce79.jpg",
-    "static/media/perdida.jpg": "/Gonorte/static/media/perdida.8bb9b708716637189eba.jpg",
+    "main.css": "/Gonorte/static/css/main.0d8812f1.css",
+    "main.js": "/Gonorte/static/js/main.c77d6aeb.js",
+    "static/media/video.mp4": "/Gonorte/static/media/video.e3679cd13c29bb29c5d1.mp4",
+    "static/media/perfil.jpg": "/Gonorte/static/media/perfil.95f782a63478d5d5283c.jpg",
+    "static/media/rendimiento.jpg": "/Gonorte/static/media/rendimiento.4d70cfa98d1cf3c708b2.jpg",
     "static/media/bg-hero.jpg": "/Gonorte/static/media/bg-hero.330c640fb395fa794d36.jpg",
-    "static/media/rendimiento.jpg": "/Gonorte/static/media/rendimiento.cf448d6b7b277b37e973.jpg",
-    "static/media/rehabilitacion.jpg": "/Gonorte/static/media/rehabilitacion.c3b2762b0e165c51fbbf.jpg",
-    "static/media/aumento.jpg": "/Gonorte/static/media/aumento.23a94cb99b4ded61d69c.jpg",
+    "static/media/aumento.jpg": "/Gonorte/static/media/aumento.0eae04b3281700ef56f4.jpg",
+    "static/media/rehabilitacion.jpg": "/Gonorte/static/media/rehabilitacion.b96ccef09647f0f0704f.jpg",
     "static/media/yoga.jpg": "/Gonorte/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
+    "static/media/perdida.jpg": "/Gonorte/static/media/perdida.688d370aecd23185fedf.jpg",
     "index.html": "/Gonorte/index.html",
-    "main.ca6b859c.css.map": "/Gonorte/static/css/main.ca6b859c.css.map",
-    "main.d79002f9.js.map": "/Gonorte/static/js/main.d79002f9.js.map"
+    "main.0d8812f1.css.map": "/Gonorte/static/css/main.0d8812f1.css.map",
+    "main.c77d6aeb.js.map": "/Gonorte/static/js/main.c77d6aeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6b859c.css",
-    "static/js/main.d79002f9.js"
+    "static/css/main.0d8812f1.css",
+    "static/js/main.c77d6aeb.js"
   ]
 }
