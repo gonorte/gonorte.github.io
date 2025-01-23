@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gonorte/static/css/main.5b2ed444.css",
-    "main.js": "/Gonorte/static/js/main.5e15ffcf.js",
+    "main.js": "/Gonorte/static/js/main.e681c147.js",
     "static/media/perfil.jpg": "/Gonorte/static/media/perfil.84a9f92379f064a1ce79.jpg",
     "static/media/perdida.jpg": "/Gonorte/static/media/perdida.8bb9b708716637189eba.jpg",
     "static/media/bg-hero.jpg": "/Gonorte/static/media/bg-hero.330c640fb395fa794d36.jpg",
@@ -11,10 +11,10 @@
     "static/media/yoga.jpg": "/Gonorte/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
     "index.html": "/Gonorte/index.html",
     "main.5b2ed444.css.map": "/Gonorte/static/css/main.5b2ed444.css.map",
-    "main.5e15ffcf.js.map": "/Gonorte/static/js/main.5e15ffcf.js.map"
+    "main.e681c147.js.map": "/Gonorte/static/js/main.e681c147.js.map"
   },
   "entrypoints": [
     "static/css/main.5b2ed444.css",
-    "static/js/main.5e15ffcf.js"
+    "static/js/main.e681c147.js"
   ]
 }
