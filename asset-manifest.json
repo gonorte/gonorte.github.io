@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gonorte/static/css/main.7709cec8.css",
+    "main.css": "/Gonorte/static/css/main.ca6b859c.css",
     "main.js": "/Gonorte/static/js/main.d79002f9.js",
     "static/media/perfil.jpg": "/Gonorte/static/media/perfil.84a9f92379f064a1ce79.jpg",
     "static/media/perdida.jpg": "/Gonorte/static/media/perdida.8bb9b708716637189eba.jpg",
@@ -10,11 +10,11 @@
     "static/media/aumento.jpg": "/Gonorte/static/media/aumento.23a94cb99b4ded61d69c.jpg",
     "static/media/yoga.jpg": "/Gonorte/static/media/yoga.06b9ed60c5f5249d0e25.jpg",
     "index.html": "/Gonorte/index.html",
-    "main.7709cec8.css.map": "/Gonorte/static/css/main.7709cec8.css.map",
+    "main.ca6b859c.css.map": "/Gonorte/static/css/main.ca6b859c.css.map",
     "main.d79002f9.js.map": "/Gonorte/static/js/main.d79002f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.7709cec8.css",
+    "static/css/main.ca6b859c.css",
     "static/js/main.d79002f9.js"
   ]
 }
