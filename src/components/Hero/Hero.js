@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-content flex" data-aos="fade-down">
         <h1>Biopoweriza tu fuerza</h1>
         <p>Conquista tu movimiento.</p>
-        <a href="#about" className="btn btn-primary">
+        <a href="#objetivos" className="btn btn-primary">
           Conóceme
         </a>
       </div>
