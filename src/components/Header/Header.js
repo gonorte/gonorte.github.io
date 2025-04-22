@@ -26,7 +26,7 @@ const Header = () => {
           <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             <i className={`fas ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
           </div>
-          <a href="/Gonorte" className="nav-brand">
+          <a href="/" className="nav-brand">
             GONORTE
           </a>
           <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
@@ -42,8 +42,8 @@ const Header = () => {
               className="nav-item"
               onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
             >
-              <a href="#about" className="nav-link">
-                Sobre mí
+              <a href="#objetivos" className="nav-link">
+                Objetivos
               </a>
             </li>
             <li
@@ -54,12 +54,13 @@ const Header = () => {
                 Servicios
               </a>
             </li>
+
             <li
               className="nav-item"
               onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
             >
-              <a href="#objetivos" className="nav-link">
-                Objetivos
+              <a href="#about" className="nav-link">
+                Sobre mí
               </a>
             </li>
 
@@ -68,7 +69,7 @@ const Header = () => {
               onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
             >
               <a
-                href="https://www.instagram.com/gonorte.biomechanics"
+                href="https://www.instagram.com/gonorte.training"
                 className="nav-link"
               >
                 <i className="fab fa-instagram"></i>
@@ -79,7 +80,7 @@ const Header = () => {
               onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
             >
               <a
-                href="https://www.tiktok.com/@gonorte.biomechanics"
+                href="https://www.tiktok.com/@gonorte.training"
                 className="nav-link"
               >
                 <i className="fab fa-tiktok">

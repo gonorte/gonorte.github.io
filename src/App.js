@@ -13,7 +13,6 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Info from "./components/Info/Info";
 import FAQs from "./components/Faqs/FAQs";
-import HeroVideo from "./components/Hero/HeroVideo";
 import AboutCareer from "./components/About/AboutCareer";
 
 const App = () => {
@@ -25,10 +24,10 @@ const App = () => {
     <div>
       <Header />
       <Hero />
+      <Info />
+      <Services />
       <About />
       <AboutCareer />
-      <Services />
-      <Info />
       <FAQs />
       <Contact />
       <Footer />
