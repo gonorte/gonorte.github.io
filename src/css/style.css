@@ -250,7 +250,7 @@ body {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("../assets/img/bg-hero.jpg") center no-repeat;
+  background: url("../assets/img/bg-hero.webp") center no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
   position: relative;
@@ -474,7 +474,7 @@ body {
 
 /* Parallax */
 .parallax {
-  background: url("../assets/img/yoga.jpg") center no-repeat;
+  background: url("../assets/img/yoga.webp") center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
@@ -526,7 +526,7 @@ footer {
   width: 100%;
   height: auto;
   padding: 2rem 0;
-  background: url("../assets/img/bg-hero.jpg") center no-repeat;
+  background: url("../assets/img/bg-hero.webp") center no-repeat;
   position: relative;
 }
 
@@ -606,7 +606,7 @@ hr {
 .hero-contact {
   width: 100%;
   height: 30vh;
-  background: url("../assets/img/bg-hero.jpg") no-repeat;
+  background: url("../assets/img/bg-hero.webp") no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -656,4 +656,95 @@ hr {
     width: initial;
     border-top: initial;
   }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: gray;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  flex-direction: column;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(5px);
+  padding: 0.4rem 0;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: flex;
+  opacity: 1;
+  transform: translateY(5px);
+  pointer-events: auto;
+}
+
+/* Links dentro del dropdown */
+.dropdown-content ul {
+  padding: 0;
+  list-style: none;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown-content ul li {
+  width: 5rem;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdown-content a svg {
+  color: var(--primary-color);
+  width: 3rem;
+}
+
+/* Para mostrar los iconos horizontalmente en móvil */
+.nav-icons-mobile {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+/* Asegura que los íconos estén visibles y centrados */
+.nav-icons-mobile svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.linksNavOpen ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.linksNavOpen ul li {
+  list-style: none;
 }

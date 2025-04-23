@@ -1,13 +1,68 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import Links from "../Links/Links";
+
+const DropdownItem = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const timeoutRef = useRef(null);
+
+  // Escucha resize para detectar mobile o desktop
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleMouseEnter = () => {
+    if (!isMobile) {
+      clearTimeout(timeoutRef.current);
+      setShowDropdown(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      timeoutRef.current = setTimeout(() => {
+        setShowDropdown(false);
+      }, 400);
+    }
+  };
+
+  if (isMobile) {
+    return (
+      <div className="linksNavOpen">
+        <Links />
+      </div>
+    );
+  }
+
+  return (
+    <li
+      className="nav-item dropdown"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="nav-link dropbtn">
+        Mis Redes <i className="fa fa-caret-down"></i>
+      </div>
+      {showDropdown && (
+        <div className="dropdown-content">
+          <Links />
+        </div>
+      )}
+    </li>
+  );
+};
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollingActive, setScrollingActive] = useState(false);
 
-  // Manejar evento de scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrollingActive(window.scrollY > 150);
@@ -54,7 +109,6 @@ const Header = () => {
                 Servicios
               </a>
             </li>
-
             <li
               className="nav-item"
               onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
@@ -64,42 +118,8 @@ const Header = () => {
               </a>
             </li>
 
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a
-                href="https://www.instagram.com/gonorte.training"
-                className="nav-link"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a
-                href="https://www.tiktok.com/@gonorte.training"
-                className="nav-link"
-              >
-                <i className="fab fa-tiktok">
-                  <FontAwesomeIcon icon={faTiktok} />
-                </i>
-              </a>
-            </li>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a
-                href="https://www.facebook.com/profile.php?id=61572526556682"
-                target="_blank"
-                className="nav-link"
-              >
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
+            {/* Dropdown personalizado con lógica de aparición/desaparición */}
+            <DropdownItem />
           </ul>
         </nav>
       </div>
