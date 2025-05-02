@@ -1,15 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import Links from "../Links/Links";
+import "./Header.css";
 
 const DropdownItem = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const timeoutRef = useRef(null);
 
-  // Escucha resize para detectar mobile o desktop
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -29,7 +27,7 @@ const DropdownItem = () => {
     if (!isMobile) {
       timeoutRef.current = setTimeout(() => {
         setShowDropdown(false);
-      }, 400);
+      }, 4000);
     }
   };
 
@@ -62,6 +60,7 @@ const DropdownItem = () => {
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollingActive, setScrollingActive] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,6 +73,20 @@ const Header = () => {
     };
   }, []);
 
+  const handleNav = (id) => {
+    if (menuOpen) setMenuOpen(false);
+    navigate("/");
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
+  const handleNavToPage = (ref) => {
+    if (menuOpen) setMenuOpen(false);
+    navigate(`/${ref}`);
+  };
+
   return (
     <header className={scrollingActive ? "scrolling-active" : ""}>
       <div className="container">
@@ -85,40 +98,21 @@ const Header = () => {
             GONORTE
           </a>
           <ul className={`nav-list ${menuOpen ? "open" : ""}`}>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a href="#hero" className="nav-link">
-                Inicio
-              </a>
+            <li className="nav-item" onClick={() => handleNav("hero")}>
+              <span className="nav-link">Inicio</span>
             </li>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a href="#objetivos" className="nav-link">
-                Objetivos
-              </a>
+            <li className="nav-item" onClick={() => handleNavToPage("planes")}>
+              <span className="nav-link">Planes</span>
             </li>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a href="#services" className="nav-link">
-                Servicios
-              </a>
+            <li className="nav-item" onClick={() => handleNav("objetivos")}>
+              <span className="nav-link">Objetivos</span>
             </li>
-            <li
-              className="nav-item"
-              onClick={() => (menuOpen ? setMenuOpen(!menuOpen) : {})}
-            >
-              <a href="#about" className="nav-link">
-                Sobre mí
-              </a>
+            <li className="nav-item" onClick={() => handleNav("services")}>
+              <span className="nav-link">Servicios</span>
             </li>
-
-            {/* Dropdown personalizado con lógica de aparición/desaparición */}
+            <li className="nav-item" onClick={() => handleNav("about")}>
+              <span className="nav-link">Sobre mí</span>
+            </li>
             <DropdownItem />
           </ul>
         </nav>
